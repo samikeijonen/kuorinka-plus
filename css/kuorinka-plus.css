@@ -1,0 +1,262 @@
+/* === Grid Columns CSS === */
+
+.column-grid {
+	clear: both;
+	margin-bottom: 1.5em;
+}
+.column-grid:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.column-grid .alignnone,
+.column-grid .aligncenter {
+	margin: 0;
+}
+/* Some rules in case wpautop() goes a little crazy. */
+.column-grid br,
+.column-grid p:empty {
+	display: none;
+}
+.column-grid .column br {
+	display: block;
+}
+
+/* Minimum width of 600 pixels. */
+@media screen and (min-width: 600px) {
+
+	.column-grid .column {
+		float: left;
+		margin-right: 5%;
+		margin-left: 0;
+	}
+	.column-grid .column-first {
+		margin-left: 0;
+	}
+	.column-grid .column-last {
+		float: right;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	/**
+	* Formula for getting the width of each column.
+	*	$width = ( 100 + $margin-right ) / ( $grid ) * ( $span ) - ( $margin_right )
+	*	$x     = ( 100 + $margin_right ) / $grid
+	*/
+
+	/* === 2 columns === */
+
+	/* $x = 52.5 */
+	.column-grid-2 .column-span-2 { width: 100%;  }
+	.column-grid-2 .column-span-1 { width: 47.5%; }
+
+	.column-grid-2 .column-push-1 { margin-left: 52.5%; }
+
+	/* === 3 columns === */
+
+	/* $x = 35 */
+	.column-grid-3 .column-span-3 { width: 100%; }
+	.column-grid-3 .column-span-2 { width: 65%;  }
+	.column-grid-3 .column-span-1 { width: 30%;  }
+
+	.column-grid-3 .column-push-2 { margin-left: 70%; }
+	.column-grid-3 .column-push-1 { margin-left: 35%; }
+
+	/* === 4 columns === */
+
+	/* $x = 26.25 */
+	.column-grid-4 .column-span-4 { width: 100%;   }
+	.column-grid-4 .column-span-3 { width: 73.75%; }
+	.column-grid-4 .column-span-2 { width: 47.5%;  }
+	.column-grid-4 .column-span-1 { width: 21.25%; }
+
+	.column-grid-4 .column-push-3 { margin-left: 78.75%; }
+	.column-grid-4 .column-push-2 { margin-left: 52.5%;  }
+	.column-grid-4 .column-push-1 { margin-left: 26.25%; }
+
+	/* === 5 columns === */
+
+	/* $x = 21 */
+	.column-grid-5 .column-span-5 { width: 100%; }
+	.column-grid-5 .column-span-4 { width: 79%;  }
+	.column-grid-5 .column-span-3 { width: 58%;  }
+	.column-grid-5 .column-span-2 { width: 37%;  }
+	.column-grid-5 .column-span-1 { width: 16%;  }
+
+	.column-grid-5 .column-push-4 { margin-left: 84%; }
+	.column-grid-5 .column-push-3 { margin-left: 63%; }
+	.column-grid-5 .column-push-2 { margin-left: 42%; }
+	.column-grid-5 .column-push-1 { margin-left: 21%; }
+
+	/* === 12 columns === */
+
+	/* $x = 8.75 */
+	.column-grid-12 .column-span-12 { width: 100%;   }
+	.column-grid-12 .column-span-11 { width: 91.25%; }
+	.column-grid-12 .column-span-10 { width: 82.5%;  }
+	.column-grid-12 .column-span-9  { width: 73.75%; }
+	.column-grid-12 .column-span-8  { width: 65%;    }
+	.column-grid-12 .column-span-7  { width: 56.25%; }
+	.column-grid-12 .column-span-6  { width: 47.5%;  }
+	.column-grid-12 .column-span-5  { width: 38.75%; }
+	.column-grid-12 .column-span-4  { width: 30%;    }
+	.column-grid-12 .column-span-3  { width: 21.25%; }
+	.column-grid-12 .column-span-2  { width: 12.5%;  }
+	.column-grid-12 .column-span-1  { width: 3.75%;  }
+
+	.column-grid-12 .column-push-11 { margin-left: 96.25%; }
+	.column-grid-12 .column-push-10 { margin-left: 87.5%;  }
+	.column-grid-12 .column-push-9  { margin-left: 78.75%; }
+	.column-grid-12 .column-push-8  { margin-left: 69%;    }
+	.column-grid-12 .column-push-7  { margin-left: 61.25%; }
+	.column-grid-12 .column-push-6  { margin-left: 52.5%;  }
+	.column-grid-12 .column-push-5  { margin-left: 43.75%; }
+	.column-grid-12 .column-push-4  { margin-left: 35%;    }
+	.column-grid-12 .column-push-3  { margin-left: 26.25%; }
+	.column-grid-12 .column-push-2  { margin-left: 17.5%;  }
+	.column-grid-12 .column-push-1  { margin-left: 8.75%;  }
+
+	/* === Right-to-Left === */
+
+	.rtl .column-grid .column {
+		float: right;
+		margin-left: 5%;
+		margin-right: 0;
+	}
+	.rtl .column-grid .column-first {
+		margin-right: 0;
+	}
+	.rtl .column-grid .column-last {
+		float: left;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.rtl .column-grid-2 .column-push-1 { margin-right: 52.5%; }
+
+	.rtl .column-grid-3 .column-push-2 { margin-right: 70%; }
+	.rtl .column-grid-3 .column-push-1 { margin-right: 35%; }
+
+	.rtl .column-grid-4 .column-push-3 { margin-right: 78.75%; }
+	.rtl .column-grid-4 .column-push-2 { margin-right: 52.5%;  }
+	.rtl .column-grid-4 .column-push-1 { margin-right: 26.25%; }
+
+	.rtl .column-grid-5 .column-push-4 { margin-right: 84%; }
+	.rtl .column-grid-5 .column-push-3 { margin-right: 63%; }
+	.rtl .column-grid-5 .column-push-2 { margin-right: 42%; }
+	.rtl .column-grid-5 .column-push-1 { margin-right: 21%; }
+
+	.rtl .column-grid-12 .column-push-11 { margin-right: 96.25%; }
+	.rtl .column-grid-12 .column-push-10 { margin-right: 87.5%;  }
+	.rtl .column-grid-12 .column-push-9  { margin-right: 78.75%; }
+	.rtl .column-grid-12 .column-push-8  { margin-right: 69%;    }
+	.rtl .column-grid-12 .column-push-7  { margin-right: 61.25%; }
+	.rtl .column-grid-12 .column-push-6  { margin-right: 52.5%;  }
+	.rtl .column-grid-12 .column-push-5  { margin-right: 43.75%; }
+	.rtl .column-grid-12 .column-push-4  { margin-right: 35%;    }
+	.rtl .column-grid-12 .column-push-3  { margin-right: 26.25%; }
+	.rtl .column-grid-12 .column-push-2  { margin-right: 17.5%;  }
+	.rtl .column-grid-12 .column-push-1  { margin-right: 8.75%;  }
+	
+}
+
+
+/* === Our Team CSS === */
+
+.post-type-archive-team-member .entry,
+.post-type-archive-team-member .loop-meta,
+.tax-team-member-category .entry,
+.tax-team-member-category .loop-meta {
+	text-align: center;
+}
+
+.post-type-archive-team-member .entry-title,
+.tax-team-member-category .entry-title,
+.post-type-archive-portfolio_item .entry-title,
+.tax-portfolio .entry-title,
+.term-post-format-video .entry-title {
+	font-size: 22px;
+}
+
+.kuorinka-plus-role {
+	font-weight: bold;
+}
+
+.our-team-contact-email,
+.our-team-tel,
+.our-team-twitter {
+	display: block;
+}
+
+@media screen and (min-width: 708px) {
+
+	/* Archive page grid. */
+	.post-type-archive-team-member .kuorinka-plus-wrapper,
+	.tax-team-member-category .kuorinka-plus-wrapper,
+	.post-type-archive-portfolio_item .kuorinka-plus-wrapper,
+	.tax-portfolio .kuorinka-plus-wrapper,
+	.term-post-format-video .kuorinka-plus-wrapper {
+		margin-left: -5%;
+	}
+	.post-type-archive-team-member .entry,
+	.tax-team-member-category .entry,
+	.post-type-archive-portfolio_item .entry,
+	.tax-portfolio .entry,
+	.term-post-format-video .entry {
+		float: left;
+		padding-left: 5%;
+		width: 50%;
+	}
+	.post-type-archive-team-member .site-main .entry:nth-child(2n+3),
+	.tax-team-member-category .site-main .entry:nth-child(2n+3),
+	.post-type-archive-portfolio_item .site-main .entry:nth-child(2n+3),
+	.tax-portfolio .site-main .entry:nth-child(2n+3),
+	.term-post-format-video .site-main .entry:nth-child(2n+3) {
+		clear: both;
+	}
+
+}
+
+/* === Custom Content Portfolio CSS === */
+
+/* Note: Archive type of pages and entry title are similar than in Our Team above. */
+.post-type-archive-portfolio_item .entry,
+.tax-portfolio .entry,
+.term-post-format-video .entry {
+	padding-bottom: 2%;
+	margin: 0;
+}
+
+.post-type-archive-portfolio_item .entry-title,
+.tax-portfolio .entry-title,
+.term-post-format-video .entry-title {
+	margin-top: 12px;
+}
+.post-type-archive-portfolio_item .loop-meta,
+.tax-portfolio .loop-meta,
+.term-post-format-video .loop-meta {
+	text-align: center;
+}
+
+/* === Callout CSS === */
+
+.kuorinka-callout-text,
+.kuorinka-callout-video {
+	margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 708px) {
+
+	.kuorinka-callout-text {
+		font-size: 1.5em;
+	}
+	.kuorinka-callout .kuorinka-button {
+		padding: 3% 6%;
+	}
+
+}
+
+
