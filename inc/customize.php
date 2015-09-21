@@ -15,6 +15,38 @@ function kuorinka_plus_customize_register( $wp_customize ) {
 		'priority' => 10
 	) );
 	
+	/* == Navigation section == */
+	
+	/* Add the navigation section. */
+	$wp_customize->add_section(
+		'multilevel-navigation',
+		array(
+			'title'    => esc_html__( 'Navigation settings', 'kuorinka-plus' ),
+			'priority' => 5,
+			'panel'    => 'kuorinka_plus_panel'
+		)
+	);
+	
+	$wp_customize->add_setting(
+		'enable_dropdown',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'kuorinka_plus_sanitize_checkbox'
+		)
+	);
+	
+	/* Add multi-level menu control. */
+	$wp_customize->add_control(
+		'enable_dropdown',
+		array(
+			'label'       => esc_html__( 'Enable multi-level menu', 'kuorinka-plus' ),
+			'description' => esc_html__( 'Check this if you want to enable multi-level dropdown in Primary menu.', 'kuorinka-plus' ),
+			'section'     => 'multilevel-navigation',
+			'priority'    => 15,
+			'type'        => 'checkbox'
+		)
+	);
+	
 	/* == Callout section == */
 	
 	/* Add the callout section. */
