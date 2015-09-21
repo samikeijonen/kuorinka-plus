@@ -15,10 +15,7 @@
  * @since 1.0.0
  */
 function kuorinka_plus_logo_customize_register( $wp_customize ) {
-
-	/* Include our custom control. */
-	require( dirname( __FILE__ ) . '/class-site-logo-control.php' );
-
+	
 	/* === Logo upload. === */
 	
 	/* Add the logo section. */
@@ -32,19 +29,29 @@ function kuorinka_plus_logo_customize_register( $wp_customize ) {
 	);
 
 	/* Add the setting for our logo value. */
-	$wp_customize->add_setting( 'site_logo', array(
-		'default' => array(
-			'url' => false,
-			'id' => 0,
-		),
-	) );
+	$wp_customize->add_setting(
+		'site_logo',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'absint'
+		)
+	);
 
 	/* Add our image uploader. */
-	$wp_customize->add_control( new Kuorinka_Plus_Logo_Image_Control( $wp_customize, 'site_logo', array(
-	    'label'    => __( 'Site Logo', 'kuorinka-plus' ),
-	    'section'  => 'logo',
-	    'settings' => 'site_logo',
-	) ) );
+	$wp_customize->add_control(
+		new WP_Customize_Cropped_Image_Control(
+			$wp_customize,
+				'site_logo',
+				array(
+					'label'       => __( 'Site Logo', 'kuorinka-plus' ),
+					'section'     => 'logo',
+					'flex_width'  => true,
+					'flex_height' => true,
+					'width'       => 240,
+					'height'      => 80,
+				)
+		)
+	);
 	
 }
 add_action( 'customize_register', 'kuorinka_plus_logo_customize_register' );

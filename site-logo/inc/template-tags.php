@@ -19,15 +19,16 @@ function kuorinka_plus_logo( $show = 'url' ) {
 	$logo = get_theme_mod( 'site_logo' );
 
 	// Return false if no logo is set
-	if ( ! isset( $logo['id'] ) || 0 == $logo['id'] ) {
+	if ( ! $logo ) {
 		return false;
 	}
 
 	// Return the ID if specified, otherwise return the URL by default
 	if ( 'id' == $show ) {
-		return $logo['id'];
+		return $logo;
 	} else {
-		return esc_url_raw( set_url_scheme( $logo['url'] ) );
+		$image_attributes = wp_get_attachment_image_src( absint( $logo ), apply_filters( 'kuorinka_plus_logo_size', 'full' ) ); // returns an array
+		return esc_url( $image_attributes[0] );
 	}
 	
 }
@@ -37,11 +38,11 @@ function kuorinka_plus_logo_dimensions( $dimension = 'width' ) {
 	$logo = get_theme_mod( 'site_logo' );
 
 	/* Return false if no logo is set. */
-	if ( ! isset( $logo['id'] ) || 0 == $logo['id'] ) {
+	if ( ! isset( $logo ) || '' == $logo ) {
 		return false;
 	}
 	
-	$image_attributes = wp_get_attachment_image_src( $logo['id'], apply_filters( 'kuorinka_plus_logo_size', 'full' ) ); // returns an array
+	$image_attributes = wp_get_attachment_image_src( absint( $logo ), apply_filters( 'kuorinka_plus_logo_size', 'full' ) ); // returns an array
 	
 	/* Calculate ratio. */
 	$image_ratio = $image_attributes[2] / $image_attributes[1] * 100;
@@ -134,6 +135,6 @@ add_action( 'wp_head', 'kuorinka_plus_logo_styles' );
 function kuorinka_plus_has_site_logo() {
 
 	$logo = get_theme_mod( 'site_logo' );
-	return ( isset( $logo['id'] ) && 0 !== $logo['id'] ) ? true : false;
+	return ( $logo ) ? true : false;
 	
 }
