@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Kuorinka Plus package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Kuorinka Plus 1.0.3\n"
+"Project-Id-Version: Kuorinka Plus 1.1.0\n"
 "Report-Msgid-Bugs-To: https://foxnet-themes.fi/contact/\n"
-"POT-Creation-Date: 2015-01-20 18:07:29+00:00\n"
+"POT-Creation-Date: 2015-09-21 08:01:03+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Last-Translator: WP-Translations (http://wp-translations.org/)\n"
 "Language-Team: WP-Translations "
 "(http://www.transifex.com/projects/p/wp-translations/)\n"
-"X-Generator: grunt-wp-i18n 0.4.5\n"
+"X-Generator: grunt-wp-i18n 0.5.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Language: English\n"
@@ -29,125 +29,137 @@ msgid "Kuorinka Plus Settings"
 msgstr ""
 
 #: inc/customize.php:24
-msgid "Front Page Settings"
+msgid "Navigation settings"
+msgstr ""
+
+#: inc/customize.php:42
+msgid "Enable multi-level menu"
 msgstr ""
 
 #: inc/customize.php:43
+msgid "Check this if you want to enable multi-level dropdown in Primary menu."
+msgstr ""
+
+#: inc/customize.php:56
+msgid "Front Page Settings"
+msgstr ""
+
+#: inc/customize.php:75
 msgid "Callout title"
 msgstr ""
 
-#: inc/customize.php:64
+#: inc/customize.php:96
 msgid "Callout text"
 msgstr ""
 
-#: inc/customize.php:85
+#: inc/customize.php:117
 msgid "Callout URL"
 msgstr ""
 
-#: inc/customize.php:106
+#: inc/customize.php:138
 msgid "Callout URL text"
 msgstr ""
 
-#: inc/customize.php:124
+#: inc/customize.php:156
 msgid "Do not show icons"
 msgstr ""
 
-#: inc/customize.php:125
+#: inc/customize.php:157
 msgid "Show icons after widget title"
 msgstr ""
 
-#: inc/customize.php:126
+#: inc/customize.php:158
 msgid "Show icons before widget title"
 msgstr ""
 
-#: inc/customize.php:133
+#: inc/customize.php:165
 msgid "Show icons"
 msgstr ""
 
-#: inc/customize.php:134
+#: inc/customize.php:166
 msgid "Select do you want to show icons after or before widget title in front page."
 msgstr ""
 
-#: inc/customize.php:156
+#: inc/customize.php:188
 msgid "Hide posts from front page"
 msgstr ""
 
-#: inc/customize.php:157
+#: inc/customize.php:189
 msgid "Check this if you want to hide latest posts from front page."
 msgstr ""
 
-#: inc/customize.php:171
+#: inc/customize.php:203
 msgid "Colors"
 msgstr ""
 
-#: inc/customize.php:190
+#: inc/customize.php:222
 msgid "Enable colors"
 msgstr ""
 
-#: inc/customize.php:194
+#: inc/customize.php:226
 msgid ""
 "It is best if you use colors only with parent theme. For more control you "
 "should use child themes. Remember to enable colors before they appear on "
 "your site."
 msgstr ""
 
-#: inc/customize.php:215
+#: inc/customize.php:247
 msgid "Body Color"
 msgstr ""
 
-#: inc/customize.php:216
+#: inc/customize.php:248
 msgid "Used in body text and buttons hover."
 msgstr ""
 
-#: inc/customize.php:239
+#: inc/customize.php:271
 msgid "Light Color"
 msgstr ""
 
-#: inc/customize.php:240
+#: inc/customize.php:272
 msgid "Used in descriptions."
 msgstr ""
 
-#: inc/customize.php:263
+#: inc/customize.php:295
 msgid "Darker Color"
 msgstr ""
 
-#: inc/customize.php:264
+#: inc/customize.php:296
 msgid "Used for titles and borders."
 msgstr ""
 
-#: inc/customize.php:287
+#: inc/customize.php:319
 msgid "Link Color"
 msgstr ""
 
-#: inc/customize.php:288
+#: inc/customize.php:320
 msgid "Used for links and borders."
 msgstr ""
 
-#: inc/customize.php:311
+#: inc/customize.php:343
 msgid "Link text Color"
 msgstr ""
 
-#: inc/customize.php:312
+#: inc/customize.php:344
 msgid "Used for text and backgrounds."
 msgstr ""
 
-#: inc/customize.php:335
+#: inc/customize.php:367
 msgid "Light Background Color"
 msgstr ""
 
-#: inc/customize.php:336
+#: inc/customize.php:368
 msgid "Used for light backgrounds."
 msgstr ""
 
-#: inc/customize.php:349
+#: inc/customize.php:381
 msgid "Footer"
 msgstr ""
 
-#: inc/customize.php:368
+#: inc/customize.php:400
 msgid "Hide site info in footer."
 msgstr ""
 
-#: inc/customize.php:390
+#: inc/customize.php:422
 msgid "Footer text:"
 msgstr ""
 
@@ -278,35 +290,11 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
-#: site-logo/inc/class-site-logo-control.php:13
-msgid "Add logo"
-msgstr ""
-
-#: site-logo/inc/class-site-logo-control.php:14
-msgid "Set as logo"
-msgstr ""
-
-#: site-logo/inc/class-site-logo-control.php:15
-msgid "Choose logo"
-msgstr ""
-
-#: site-logo/inc/class-site-logo-control.php:16
-msgid "Change logo"
-msgstr ""
-
-#: site-logo/inc/class-site-logo-control.php:17
-msgid "Remove logo"
-msgstr ""
-
-#: site-logo/inc/class-site-logo-control.php:18
-msgid "No logo set"
-msgstr ""
-
-#: site-logo/inc/functions.php:28
+#: site-logo/inc/functions.php:25
 msgid "Logo"
 msgstr ""
 
-#: site-logo/inc/functions.php:44
+#: site-logo/inc/functions.php:46
 msgid "Site Logo"
 msgstr ""
 

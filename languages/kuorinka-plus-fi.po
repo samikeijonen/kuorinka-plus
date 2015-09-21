@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kuorinka Plus 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxnet-themes.fi/contact/\n"
-"POT-Creation-Date: 2014-12-14 14:09:22+00:00\n"
-"PO-Revision-Date: 2014-12-14 16:10+0200\n"
+"POT-Creation-Date: 2015-09-21 11:01+0300\n"
+"PO-Revision-Date: 2015-09-21 11:03+0300\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet Themes <sami.keijonen@foxnet.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.8.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -26,65 +26,78 @@ msgid "Kuorinka Plus Settings"
 msgstr "Kuorinka Plus asetukset"
 
 #: inc/customize.php:24
+msgid "Navigation settings"
+msgstr "Navigaation asetukset"
+
+#: inc/customize.php:42
+msgid "Enable multi-level menu"
+msgstr "Ota dropdown-valikko käyttöön"
+
+#: inc/customize.php:43
+msgid "Check this if you want to enable multi-level dropdown in Primary menu."
+msgstr ""
+"Valitse tämä, jos haluat ottaa dropdown-valikon käyttöön pienillä näytöillä."
+
+#: inc/customize.php:56
 msgid "Front Page Settings"
 msgstr "Etusivun asetukset"
 
-#: inc/customize.php:43
+#: inc/customize.php:75
 msgid "Callout title"
 msgstr "Callout-otsikko"
 
-#: inc/customize.php:64
+#: inc/customize.php:96
 msgid "Callout text"
 msgstr "Callout-teksti"
 
-#: inc/customize.php:85
+#: inc/customize.php:117
 msgid "Callout URL"
 msgstr "Callout URL-linkki"
 
-#: inc/customize.php:106
+#: inc/customize.php:138
 msgid "Callout URL text"
 msgstr "Callout URL-linkin teksti"
 
-#: inc/customize.php:124
+#: inc/customize.php:156
 msgid "Do not show icons"
 msgstr "Älä näytä ikoneita"
 
-#: inc/customize.php:125
+#: inc/customize.php:157
 msgid "Show icons after widget title"
 msgstr "Näytä ikonit vimpaimen otsikon jälkeen"
 
-#: inc/customize.php:126
+#: inc/customize.php:158
 msgid "Show icons before widget title"
 msgstr "Näytä ikonit vimpaimen otsikkoa ennen"
 
-#: inc/customize.php:133
+#: inc/customize.php:165
 msgid "Show icons"
 msgstr "Näytä ikonit"
 
-#: inc/customize.php:134
+#: inc/customize.php:166
 msgid ""
 "Select do you want to show icons after or before widget title in front page."
 msgstr ""
 "Valitse haluatko näyttää ikonit ennen vai jälkeen vimpaimen otsikon "
 "etusivulla."
 
-#: inc/customize.php:156
+#: inc/customize.php:188
 msgid "Hide posts from front page"
 msgstr "Piilota viimeisimmät artikkelit etusivulla"
 
-#: inc/customize.php:157
+#: inc/customize.php:189
 msgid "Check this if you want to hide latest posts from front page."
 msgstr "Valitse tämä jos haluat piilottaa viimeisimmät artikkelit etusivulla."
 
-#: inc/customize.php:171
+#: inc/customize.php:203
 msgid "Colors"
 msgstr "Värit"
 
-#: inc/customize.php:190
+#: inc/customize.php:222
 msgid "Enable colors"
 msgstr "Ota värit käyttöön"
 
-#: inc/customize.php:194
+#: inc/customize.php:226
 msgid ""
 "It is best if you use colors only with parent theme. For more control you "
 "should use child themes. Remember to enable colors before they appear on "
@@ -94,63 +107,63 @@ msgstr ""
 "enemmän värejä ja ulkoasu, niin on syytä käyttää alateemaa. Muista ottaa "
 "värit käyttöön ennen kuin ne näkyvät sivulla."
 
-#: inc/customize.php:215
+#: inc/customize.php:247
 msgid "Body Color"
 msgstr "Sivuston väri (body)"
 
-#: inc/customize.php:216
+#: inc/customize.php:248
 msgid "Used in body text and buttons hover."
 msgstr "Käytetään tekstin (body) värinä ja painikkeiden hover-värinä."
 
-#: inc/customize.php:239
+#: inc/customize.php:271
 msgid "Light Color"
 msgstr "Vaalea väri"
 
-#: inc/customize.php:240
+#: inc/customize.php:272
 msgid "Used in descriptions."
 msgstr "Käytetään kuvauksissa."
 
-#: inc/customize.php:263
+#: inc/customize.php:295
 msgid "Darker Color"
 msgstr "Tummempi väri"
 
-#: inc/customize.php:264
+#: inc/customize.php:296
 msgid "Used for titles and borders."
 msgstr "Käytetään otsikoissa ja reunaviivoissa."
 
-#: inc/customize.php:287
+#: inc/customize.php:319
 msgid "Link Color"
 msgstr "Linkin väri"
 
-#: inc/customize.php:288
+#: inc/customize.php:320
 msgid "Used for links and borders."
 msgstr "Käytetään linkkien värinä ja reunaviivoissa."
 
-#: inc/customize.php:311
+#: inc/customize.php:343
 msgid "Link text Color"
 msgstr "Linkin tekstin väri"
 
-#: inc/customize.php:312
+#: inc/customize.php:344
 msgid "Used for text and backgrounds."
 msgstr "Käytetään tekstissä ja taustavärissä."
 
-#: inc/customize.php:335
+#: inc/customize.php:367
 msgid "Light Background Color"
 msgstr "Vaalea taustaväri"
 
-#: inc/customize.php:336
+#: inc/customize.php:368
 msgid "Used for light backgrounds."
 msgstr "Käytetään vaaleana taustavärinä."
 
-#: inc/customize.php:349
+#: inc/customize.php:381
 msgid "Footer"
 msgstr "Alapalkki"
 
-#: inc/customize.php:368
+#: inc/customize.php:400
 msgid "Hide site info in footer."
 msgstr "Piilota alapalkin teksti."
 
-#: inc/customize.php:390
+#: inc/customize.php:422
 msgid "Footer text:"
 msgstr "Alapalkin teksti:"
 
@@ -260,7 +273,7 @@ msgstr "Lisenssiavain on poissa käytöstä."
 msgid "Site is inactive."
 msgstr "Sivusto ei ole aktiivinen."
 
-#: plugin-updater/plugin-updater-class.php:158
+#: plugin-updater/plugin-updater-class.php:177
 msgid ""
 "There is a new version of %1$s available. <a target=\"_blank\" class="
 "\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
@@ -268,7 +281,7 @@ msgstr ""
 "Lisäosasta %1$s on uusi versio saatavilla. <a target=\"_blank\" class="
 "\"thickbox\" href=\"%2$s\">Näytä version %3$s tiedot</a>."
 
-#: plugin-updater/plugin-updater-class.php:165
+#: plugin-updater/plugin-updater-class.php:184
 msgid ""
 "There is a new version of %1$s available. <a target=\"_blank\" class="
 "\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
@@ -278,39 +291,19 @@ msgstr ""
 "\"thickbox\" href=\"%2$s\">Näytä version %3$s tiedot</a> tai <a href=\"%4$s"
 "\">päivitä nyt</a>."
 
-#: plugin-updater/plugin-updater-class.php:305
+#: plugin-updater/plugin-updater-class.php:324
 msgid "You do not have permission to install plugin updates"
 msgstr "Sinulla ei ole oikeutta päivittää lisäosia"
 
-#: site-logo/inc/class-site-logo-control.php:13
-msgid "Add logo"
-msgstr "Lisää logo"
+#: plugin-updater/plugin-updater-class.php:324
+msgid "Error"
+msgstr "Virhe"
 
-#: site-logo/inc/class-site-logo-control.php:14
-msgid "Set as logo"
-msgstr "Aseta logoksi"
-
-#: site-logo/inc/class-site-logo-control.php:15
-msgid "Choose logo"
-msgstr "Valitse logo"
-
-#: site-logo/inc/class-site-logo-control.php:16
-msgid "Change logo"
-msgstr "Vaihda logo"
-
-#: site-logo/inc/class-site-logo-control.php:17
-msgid "Remove logo"
-msgstr "Poista logo"
-
-#: site-logo/inc/class-site-logo-control.php:18
-msgid "No logo set"
-msgstr "Logo ei ole ladattu"
-
-#: site-logo/inc/functions.php:28
+#: site-logo/inc/functions.php:25
 msgid "Logo"
 msgstr "Logo"
 
-#: site-logo/inc/functions.php:44
+#: site-logo/inc/functions.php:46
 msgid "Site Logo"
 msgstr "Logo"
 
