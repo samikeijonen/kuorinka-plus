@@ -3,7 +3,7 @@
  * Plugin Name: Kuorinka Plus
  * Plugin URI:  https://foxland.fi/downloads/kuorinka-plus
  * Description: Adds new features for Kuorinka Theme.
- * Version:     1.0.3
+ * Version:     1.1.0
  * Author:      Sami Keijonen
  * Author URI:  https://foxland.fi
  * Text Domain: kuorinka-plus
@@ -20,7 +20,7 @@
  * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
  * @package    Kuorinka Plus
- * @version    1.0.3
+ * @version    1.1.0
  * @author     Sami Keijonen <sami.keijonen@foxnet.fi>
  * @copyright  Copyright (c) 2014, Sami Keijonen
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -131,7 +131,7 @@ final class Kuorinka_Plus {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'KUORINKA_PLUS_VERSION', '1.0.3' );
+		define( 'KUORINKA_PLUS_VERSION', '1.1.0' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'KUORINKA_PLUS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
