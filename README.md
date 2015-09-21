@@ -25,6 +25,9 @@ Plugin resources are licensed under the [GNU GPL](http://www.gnu.org/licenses/ol
 
 ### Version 1.1.0 - September 21, 2015
 
+* Use Core image upload system for logo. Remove all the old stuff.
+* Add setting for multi-level dropdown menu. JS files are in the Kuorinka Theme.
+
 ### Version 1.0.0
 
 * Everything's new!
