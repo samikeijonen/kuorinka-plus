@@ -19,9 +19,14 @@ After that you get support and automatic updates.
 
 Plugin resources are licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
 
-2015 &copy; [Sami Keijonen](https://foxland.fi).
+2015-2016 &copy; [Sami Keijonen](https://foxland.fi).
 
 ## Changelog
+
+### Version 1.2.0 - December 29, 2016
+
+* Remove logo, it's now WordPress Core feature and not allowed behind payment.
+* Update plugin updater.
 
 ### Version 1.1.1 - January 4, 2016
 
